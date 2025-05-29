@@ -2,6 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 import warnings
+import os
 warnings.filterwarnings("ignore")
 
 st.set_page_config(page_title="Superstore Dashboard", layout="wide", page_icon="📊")
@@ -12,6 +13,9 @@ fl = st.file_uploader(":file_folder: Upload a file", type=["csv", "xlsx", "json"
 if fl is not None:
     df = pd.read_csv(fl)
 else:
+    if not os.path.exists("Sample - Superstore.csv"):
+        st.warning("File 'Sample - Superstore.csv' tidak ditemukan. Silakan download dari [Kaggle](https://www.kaggle.com/datasets/jessemostipak/superstore-dataset) dan letakkan di folder ini.")
+        st.stop()
     df = pd.read_csv("Sample - Superstore.csv", encoding="ISO-8859-1")
 
 col1, col2 = st.columns(2)
