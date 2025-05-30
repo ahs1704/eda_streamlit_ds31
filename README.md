@@ -27,7 +27,7 @@ Aplikasi visualisasi interaktif berbasis Streamlit untuk menganalisis data penju
 1. Clone repo:
    ```bash
    git clone https://github.com/ahs1704/eda_streamlit_ds31.git
-   cd superstore-eda-dashboard
+   cd superstore-eda-dashboard.streamlit.app
 
 ### Buat dan aktifkan virtual environment:
 python -m venv venv
