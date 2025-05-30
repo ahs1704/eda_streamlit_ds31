@@ -26,7 +26,7 @@ Aplikasi visualisasi interaktif berbasis Streamlit untuk menganalisis data penju
 
 1. Clone repo:
    ```bash
-   git clone https://github.com/username/superstore-eda-dashboard.git
+   git clone https://github.com/ahs1704/eda_streamlit_ds31.git
    cd superstore-eda-dashboard
 
 ### Buat dan aktifkan virtual environment:
