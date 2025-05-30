@@ -47,4 +47,7 @@ streamlit run app.py
 ├── requirements.txt         # Daftar library
 ├── README.md                # Dokumentasi proyek
 
+File `Sample - Superstore.csv` sudah tersedia di repo.  
+Jalankan aplikasi dengan:
+streamlit run dashboard_eda.py
 
